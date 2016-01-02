@@ -1,0 +1,27 @@
+{
+  "name": "es6-pixi-bolierplate",
+  "version": "0.9.0",
+  "private": true,
+  "description": "",
+  "main": "./build/game.js",
+  "author": "Nazariglez <nazari.nz@gmail.com> (http://www.nazariglez.com)",
+  "license": "MIT",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "webpack --config webpack.config.js --progress --inline --colors --watch",
+    "build": "NODE_ENV=production webpack --config webpack.config.js --progress --colors -p"
+  },
+  "devDependencies": {
+    "babel-core": "^6.3.17",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "babel-runtime": "^6.3.13",
+    "brfs": "^1.4.1",
+    "json-loader": "^0.5.4",
+    "pixi-animationloop": "^1.0.7",
+    "pixi.js": "^3.0.8",
+    "transform-loader": "^0.2.3",
+    "webpack": "^1.12.9"
+  }
+}
