@@ -6,20 +6,25 @@ This is a simple Pixi.js template to start building games using ES6/2015.
 ## Usage
 First of all, this project needs [Webpack](https://webpack.github.io/) in the global scope:
 
-  npm install webpack -g
+```js
+npm install webpack -g
+```
 
 Once we have installed webpack just clone this repository:
-
-  git clone https://github.com/Nazariglez/es6-pixi-bolierplate.git
+```js
+git clone https://github.com/Nazariglez/es6-pixi-bolierplate.git
+```
 
 And install it:
 
-  npm install
+```js
+npm install
+```
 
 Now you can use `npm start` or `npm run dev` to start watching and compiling files, or `npm run build` to create a minified, ready to production file.
 
 ## Files
-This project has just 5 files in the `src`folder like a start point.
+This project has just 5 files in the `src` folder like a start point.
 
 - __plugin.js:__ Add the plugins what you want to extend pixi. This template use the [pixi-animationloop](https://github.com/Nazariglez/pixi-animationloop) plugin by default.
 - __index.js:__ Create the game object.
