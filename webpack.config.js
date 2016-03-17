@@ -3,6 +3,19 @@
 var webpack = require('webpack');
 var path = require('path');
 
+var plugins = [];
+if(process.env.NODE_ENV === "production"){
+	plugins.push(
+		new webpack.optimize.UglifyJsPlugin({
+			minimize: true,
+			compress: {
+				warnings: false
+			},
+			output: {comments:false}
+		})
+	);
+}
+
 module.exports = {
 	devtool: 'source-map',
 	entry: ['pixi.js', './src/index.js'],
@@ -12,6 +25,7 @@ module.exports = {
   resolve: {
     extensions: ["", ".js"]
   },
+	plugins: plugins,
 	module: {
     postLoaders: [
       {
