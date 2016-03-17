@@ -29,7 +29,7 @@ module.exports = {
 	module: {
     postLoaders: [
       {
-        loader: "transform?brfs"
+        loader: "transform/cacheable?brfs"
       }
     ],
 		loaders: [
